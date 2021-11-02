@@ -48,7 +48,7 @@ db.query(sql, params, (err, row) => {
     });
 });
 });
-//Delete a candidate
+//create API endpoint, Delete a candidate
 app.delete('/api/candidate/:id', (req, res) => {
     const sql = `DELETE FROM candidates WHERE id = ?`;
     const params = [req.params.id];
